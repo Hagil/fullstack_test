@@ -44,16 +44,26 @@ function display_players(data) {
     td.text(last_name);
     tr.append(td);
 
+    var last_name = data[counter].position;
+    console.log(position);
+    var td = $('<td>');
+    td.text(position);
+    tr.append(td);
+
+    var last_name = data[counter].jersey;
+      console.log(jersey);
+    var td = $('<td>');
+    td.text(jersey);
+    tr.append(td);
+
 
     var td = $('<td>');
     var button = $('<button>');
     button.addClass('btn btn-info edit');
-    button.text('Edit');
+    button.text('Add');
     var player_rank = data[counter].player_rank;
     button.attr('id', player_rank);
     td.append(button);
-
-
 
     tr.append(td);
 
@@ -69,16 +79,19 @@ function display_players(data) {
     $('#list_players tbody').append(tr);
   }
 
-$('.edit').click(do_edit);
+
+$('.add').click(do_add);
 $('.delete').click(do_delete);
 }
 
-function do_edit(){
-  console.log('Inside do_edit');
+function do_add(){
+  console.log('Inside do_add');
   console.log( $(this).attr('id') );
-//var edit_team = {team: $(this).attr('id')}
-//$.get('backend/teams/edit_team.php', edit_team).done(team_edited).fail(blow_up);
+  //var edit_team = {team: $(this).attr('id')}
+  //$.get('backend/teams/edit_team.php', edit_team).done(team_edited).fail(blow_up);
+
 }
+
 function do_delete(){
   console.log('Inside do_delete');
     console.log( $(this).attr('id') );

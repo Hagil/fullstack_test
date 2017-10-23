@@ -7,7 +7,7 @@
 
   <div class="jumbotron">
     <h1>Top 30 NBA Players 2018</h1>
-    <p>This site will blow your mind</p>
+    <p>Members only database!</p>
   </div>
 
 <div id="login_div">
@@ -39,7 +39,9 @@
     <th>Team ID</th>
     <th>First Name</th>
     <th>Last Name</th>
-    <th>Edit</th>
+    <th>Position</th>
+    <th>Jersey</th>
+    <th>Add</th>
     <th>Delete</th>
   </tr>
 </thead>

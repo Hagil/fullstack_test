@@ -28,5 +28,5 @@ if ($stmt->rowCount() == 1) {
 } else {
   header('Location: index.php');
   echo 'sorry - you must be logged in';
-  logger($db->conn->error);
+  logger($stmt->error);
 }
