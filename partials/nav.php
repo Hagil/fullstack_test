@@ -15,8 +15,8 @@
         <li><a href="#">Players</a></li>
         <li><a href="#">Biometrics</a></li>
         <li><a href="#">Teams</a></li>
-            <li><a href="#">Statistics</a></li>
-                  <li><a href="#">Favourites</a></li>
+        <li><a href="#">Statistics</a></li>
+        <li><a href="#">Favourites</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
