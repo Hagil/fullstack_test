@@ -9,7 +9,7 @@ function show_players() {
 function display_players(data) {
   console.log('Inside display_players');
   data = JSON.parse(data);
-  //console.log(data);
+  console.log(data);
   $('#list_players').append(data);
   for (var counter = 0; counter < data.length; counter++) {
 
@@ -44,13 +44,13 @@ function display_players(data) {
     td.text(last_name);
     tr.append(td);
 
-    var last_name = data[counter].position;
+    var position = data[counter].position;
     console.log(position);
     var td = $('<td>');
     td.text(position);
     tr.append(td);
 
-    var last_name = data[counter].jersey;
+    var jersey = data[counter].jersey;
       console.log(jersey);
     var td = $('<td>');
     td.text(jersey);
