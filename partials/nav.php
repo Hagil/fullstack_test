@@ -19,7 +19,7 @@
         <li><a href="favourites.php">Favourites</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="js/create_user.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="create_user.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
       </ul>
     </div>
   </div>

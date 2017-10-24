@@ -1,6 +1,14 @@
+<?php
+session_start();
+if(!$_SESSION['logged_in']) {
+  header("Location:index.php");
+}
+?>
+
 <!DOCTYPE html>
 <html>
 <?php include('partials/head.php'); ?>
+<script src="../js/stats.js"></script>
 
 <body class="container">
   <?php include('partials/nav.php'); ?>
@@ -10,16 +18,18 @@
     <p>Statistics</p>
   </div>
 
-<table id="list_players" class="table">
+<table id="list_stats" class="table">
 <thead>
   <tr>
     <th>Player ID</th>
-    <th>Player Rank</th>
     <th>Team ID</th>
     <th>First Name</th>
     <th>Last Name</th>
-    <th>Position</th>
-    <th>Jersey</th>
+    <th>Points Avg</th>
+    <th>Rebound Avg</th>
+    <th>Assist Avg</th>
+    <th>block Avg</th>
+    <th>Steals Avg</th>
     <th>Add</th>
     <th>Delete</th>
   </tr>
