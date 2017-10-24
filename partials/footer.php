@@ -1,4 +1,9 @@
-
 <footer>
-Hagil Baik 2017 &copy; 
-</footer>
+  <div class="clearfix"></div>
+  	<p>
+  	<span class="copyright">Copyright 2017</span>
+  	</p>
+  	<p>
+  	<span class="message">Created with &hearts; by <span class="name">Hagil Baik</span>
+  	</p>
+  </footer>

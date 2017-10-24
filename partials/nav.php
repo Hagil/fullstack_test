@@ -7,20 +7,19 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">NBA</a>
+      <a class="navbar-brand" href="https://www.nba.com">NBA</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Players</a></li>
-        <li><a href="#">Biometrics</a></li>
-        <li><a href="#">Teams</a></li>
-        <li><a href="#">Statistics</a></li>
-        <li><a href="#">Favourites</a></li>
+        <li class="active"><a href="welcome.php">Home</a></li>
+        <li><a href="players.php">Players</a></li>
+        <li><a href="biometrics.php">Biometrics</a></li>
+        <li><a href="teams.php">Teams</a></li>
+        <li><a href="statistics.php">Statistics</a></li>
+        <li><a href="favourites.php">Favourites</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="js/create_user.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
       </ul>
     </div>
   </div>

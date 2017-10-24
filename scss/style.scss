@@ -4,15 +4,112 @@ $main-font: 'Roboto', sans-serif;
 body {
   font-family: -font;
   padding-top: 70px;
+  background: black;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: -font;
-}
 .jumbotron {
-    margin-bottom: 0px;
-    height: 350px;
+  margin-top: 50px;
+    margin-bottom: 70px;
+    height: 230px;
     color: black;
     text-shadow: black 0.3em 0.3em 0.3em;
-    background: gray;
+    background: red;
+}
+
+body {
+	text-align:  center;
+	margin: 0;
+  font-family: -font;
+  padding-top: 70px;
+}
+
+header {
+	background-color: #F15B31;
+	padding: 30px 20px;
+	margin: 0;
+}
+
+nav {
+	background-color: #00A6B3;
+  background: #00A6B3;
+
+}
+
+
+h1 {
+	font-family: "Raleway";
+	color: #0D2C40;
+	letter-spacing: 1px;
+	font-weight: 400;
+	font-size: 45px;
+	margin: 0;
+}
+a {
+	font-family: "Raleway";
+	color: #F15B31;
+	letter-spacing: 1px;
+	font-weight: 600;
+	font-size: 18px;
+	margin: 20px;
+	border-bottom: 2px solid transparent;
+}
+h2 {
+	font-family: "Raleway";
+	color: #0D2C40;
+	letter-spacing: 1px;
+	font-weight: 600;
+	font-size: 20px;
+}
+p {
+	font-family: "Droid Serif";
+  margin-top: 30px;
+	line-height: 26px;
+	font-size: 18px;
+}
+
+main {
+	width: 850px;
+	margin: 35px auto;
+}
+
+img {
+	margin: 40px 8px;
+}
+
+footer {
+	text-transform: uppercase;
+	padding: 0 20px;
+	background-color: #0D2C40;
+	color: white;
+	font-size: 14px;
+	letter-spacing: .08em;
+	font-weight: 500;
+}
+
+a:hover {
+	background-color: white;
+}
+
+.copyright {
+	font-family: "Raleway";
+	float: left;
+}
+
+.message {
+	font-family: "Raleway";
+	float: right;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	content: " ";
+	clear: both;
+	height: 0;
+	font-size: 0;
+}
+
+.name {
+	color: #F15B31;
+	font-weight: 700;
 }
