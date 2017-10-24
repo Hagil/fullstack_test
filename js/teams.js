@@ -1,12 +1,13 @@
 console.log('showing teams');
 
-teams();
 
-function teams() {
+function show_teams() {
   console.log('Inside teams');
   $.get('backend/players/teams.php').done(display_teams).fail(blow_up);
 
 }
+
+show_teams();
 
 function display_teams(data) {
   console.log('Inside display_teams');

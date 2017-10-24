@@ -1,10 +1,10 @@
 console.log('showing players');
-show_players();
 
 function show_players() {
   console.log('Inside show_players');
   $.get('backend/players/show_players.php').done(display_players).fail(blow_up);
 }
+show_players();
 
 function display_players(data) {
   console.log('Inside display_players');

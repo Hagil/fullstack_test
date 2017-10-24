@@ -1,10 +1,10 @@
 console.log('showing bio');
-show_bio();
 
 function show_bio() {
   console.log('Inside show_bio');
-  $.get('backend/players/biometrics.php').done(display_bio).fail(blow_up);
+  $.get('backend/players/bio.php').done(display_bio).fail(blow_up);
 }
+show_bio();
 
 function display_bio(data) {
   console.log('Inside display_bio');
@@ -74,7 +74,7 @@ function display_bio(data) {
     button.addClass('btn btn-info edit');
     button.text('Add');
     var player_id = data[counter].player_id;
-    button.attr('id', player_rank);
+    button.attr('id', player_id);
     td.append(button);
 
     tr.append(td);
@@ -84,7 +84,7 @@ function display_bio(data) {
     button.addClass('btn btn-danger delete');
     button.text('Delete');
     var player_id = data[counter].player_id;
-    button.attr('id', player_rank);
+    button.attr('id', player_id);
     td.append(button);
     tr.append(td);
 
