@@ -10,11 +10,9 @@ $sql = "SELECT * FROM teams";
 $result = $db->conn->query($sql);
 
 if($result){
-  logger ($result->fetchAll());
   $output = $result->fetchAll();
   echo json_encode($output);
 }
   else{
 logger($db->conn->error);
-echo "not working";
   }

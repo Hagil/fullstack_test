@@ -1,19 +1,17 @@
 console.log('showing teams');
 
-
-function show_teams() {
+function teams() {
   console.log('Inside teams');
   $.get('backend/players/teams.php').done(display_teams).fail(blow_up);
-
 }
 
-show_teams();
+teams();
 
 function display_teams(data) {
   console.log('Inside display_teams');
   data = JSON.parse(data);
   console.log(data);
-  $('#list_teams').append(data);
+  $('#show_teams').append(data);
   for (var counter = 0; counter < data.length; counter++) {
 
     var tr = $('<tr>');
@@ -61,7 +59,7 @@ function display_teams(data) {
     td.append(button);
     tr.append(td);
 
-    $('#list_teams tbody').append(tr);
+    $('#show_teams tbody').append(tr);
   }
 
 
@@ -72,8 +70,6 @@ function display_teams(data) {
 function do_add() {
   console.log('Inside do_add');
   console.log($(this).attr('id'));
-  //var edit_team = {team: $(this).attr('id')}
-  //$.get('backend/teams/edit_team.php', edit_team).done(team_edited).fail(blow_up);
 
 }
 

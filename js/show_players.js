@@ -87,9 +87,7 @@ function display_players(data) {
 function do_add() {
   console.log('Inside do_add');
   console.log($(this).attr('id'));
-  //var edit_team = {team: $(this).attr('id')}
-  //$.get('backend/teams/edit_team.php', edit_team).done(team_edited).fail(blow_up);
-
+  
 }
 
 function do_delete() {

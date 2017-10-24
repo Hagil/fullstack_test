@@ -26,6 +26,12 @@ function display_bio(data) {
     td.text(first_name);
     tr.append(td);
 
+    var last_name = data[counter].last_name;
+    console.log(last_name);
+    var td = $('<td>');
+    td.text(last_name);
+    tr.append(td);
+
     var date_of_birth = data[counter].date_of_birth;
     console.log(date_of_birth);
     var td = $('<td>');
@@ -99,8 +105,6 @@ function display_bio(data) {
 function do_add() {
   console.log('Inside do_add');
   console.log($(this).attr('id'));
-  //var edit_team = {team: $(this).attr('id')}
-  //$.get('backend/teams/edit_team.php', edit_team).done(team_edited).fail(blow_up);
 
 }
 

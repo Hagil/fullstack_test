@@ -11,7 +11,7 @@
     <p>Team Info</p>
   </div>
 
-<table id="list_teams" class="table">
+<table id="show_teams" class="table">
 <thead>
   <tr>
     <th>Team ID</th>
