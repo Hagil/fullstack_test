@@ -1,9 +1,9 @@
-console.log('showing players');
-show_players();
+console.log('showing bio');
+show_bio();
 
-function show_players() {
-  console.log('Inside show_players');
-  $.get('backend/players/show_players.php').done(display_players).fail(blow_up);
+function show_bio() {
+  console.log('Inside show_bio');
+  $.get('backend/players/biometrics.php').done(display_players).fail(blow_up);
 }
 
 function display_players(data) {

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <?php include('partials/head.php'); ?>
+  <script src="../js/show_players.js"></script>
 
 <body class="container">
   <?php include('partials/nav.php'); ?>

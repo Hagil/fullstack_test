@@ -7,7 +7,6 @@ function setup() {
   $('#inside').hide();
   $('#login').click(do_login);
   $('#logout').click(do_logout);
-  show_players();
 }
 
 function blow_up(data) {

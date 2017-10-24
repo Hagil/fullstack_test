@@ -26,7 +26,7 @@
     <p>you are logged in!</p>
     <button id="logout">logout</button>
 
-    <a href="welcome.php">go to the members only area</a>
+    <a href="welcome.php">  go to the members only area</a>
   </div>
 </div>
 
