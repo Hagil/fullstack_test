@@ -3,14 +3,14 @@ show_bio();
 
 function show_bio() {
   console.log('Inside show_bio');
-  $.get('backend/players/biometrics.php').done(display_players).fail(blow_up);
+  $.get('backend/players/biometrics.php').done(display_bio).fail(blow_up);
 }
 
-function display_players(data) {
-  console.log('Inside display_players');
+function display_bio(data) {
+  console.log('Inside display_bio');
   data = JSON.parse(data);
   console.log(data);
-  $('#list_players').append(data);
+  $('#list_bio').append(data);
   for (var counter = 0; counter < data.length; counter++) {
 
     var tr = $('<tr>');
@@ -20,40 +20,52 @@ function display_players(data) {
     td.text(player_id);
     tr.append(td);
 
-    var player_rank = data[counter].player_rank;
-    console.log(player_rank);
-    var td = $('<td>');
-    td.text(player_rank);
-    tr.append(td);
-
-    var team_id = data[counter].team_id;
-    console.log(team_id);
-    var td = $('<td>');
-    td.text(team_id);
-    tr.append(td);
-
     var first_name = data[counter].first_name;
     console.log(first_name);
     var td = $('<td>');
     td.text(first_name);
     tr.append(td);
 
-    var last_name = data[counter].last_name;
-    console.log(last_name);
+    var date_of_birth = data[counter].date_of_birth;
+    console.log(date_of_birth);
     var td = $('<td>');
-    td.text(last_name);
+    td.text(date_of_birth);
     tr.append(td);
 
-    var position = data[counter].position;
-    console.log(position);
+    var height_ft_in = data[counter].height_ft_in;
+    console.log(height_ft_in);
     var td = $('<td>');
-    td.text(position);
+    td.text(height_ft_in);
     tr.append(td);
 
-    var jersey = data[counter].jersey;
-    console.log(jersey);
+    var height_m = data[counter].height_m;
+    console.log(height_m);
     var td = $('<td>');
-    td.text(jersey);
+    td.text(height_m);
+    tr.append(td);
+
+    var weight_lbs = data[counter].weight_lbs;
+    console.log(weight_lbs);
+    var td = $('<td>');
+    td.text(weight_lbs);
+    tr.append(td);
+
+    var weight_kg = data[counter].weight_kg;
+    console.log(weight_kg);
+    var td = $('<td>');
+    td.text(weight_kg);
+    tr.append(td);
+
+    var nationality = data[counter].nationality;
+    console.log(nationality);
+    var td = $('<td>');
+    td.text(nationality);
+    tr.append(td);
+
+    var university = data[counter].university;
+    console.log(university);
+    var td = $('<td>');
+    td.text(university);
     tr.append(td);
 
 
@@ -61,7 +73,7 @@ function display_players(data) {
     var button = $('<button>');
     button.addClass('btn btn-info edit');
     button.text('Add');
-    var player_rank = data[counter].player_rank;
+    var player_id = data[counter].player_id;
     button.attr('id', player_rank);
     td.append(button);
 
@@ -71,12 +83,12 @@ function display_players(data) {
     var button = $('<button>');
     button.addClass('btn btn-danger delete');
     button.text('Delete');
-    var player_rank = data[counter].player_rank;
+    var player_id = data[counter].player_id;
     button.attr('id', player_rank);
     td.append(button);
     tr.append(td);
 
-    $('#list_players tbody').append(tr);
+    $('#list_bio tbody').append(tr);
   }
 
 
