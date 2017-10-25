@@ -21,7 +21,7 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="create_user.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="index.php"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
+        <li id="loggingout"><a href="index.php"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
 
       </ul>
     </div>

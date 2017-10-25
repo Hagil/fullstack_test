@@ -7,6 +7,7 @@ function setup() {
   $('#inside').hide();
   $('#login').click(do_login);
   $('#logout').click(do_logout);
+  $('#loggingout').click(do_logout);
   $('#create_user_button').click(create_user);
 }
 
