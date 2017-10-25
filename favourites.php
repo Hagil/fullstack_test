@@ -1,8 +1,10 @@
 <?php
 session_start();
+include("backend/common/logger.php");
+logger($_SESSION);
 if(!$_SESSION['logged_in']) {
-  header("Location:index.php");
-}
+header("Location: index.php");
+} 
 ?>
 <!DOCTYPE html>
 <html>

@@ -2,7 +2,7 @@
 
 require('logger.php');
 require_once('credentials.php');
-logger('loaded connection script');
+//logger('loaded connection script');
 
 class Dbconnect
 {
@@ -14,7 +14,7 @@ class Dbconnect
     $this->conn = new PDO("mysql:host=127.0.0.1;dbname=project_two", $app_user, $app_pass);
     // set the PDO error mode to exception
     $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    logger("Connected successfully");
+    //logger("Connected successfully");
 
     return $this->conn;
     }
