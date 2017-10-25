@@ -12,14 +12,23 @@
 
   <div id="login_div">
 
-    <div id="outside">
-      <input type="text" id="username" placeholder="enter username">
-      <input type="password" id="password" placeholder="enter password">
-      <button id="signup">Sign Up</button>
+    <fieldset style="width:30%"><legend>Registration Form</legend>
 
-  <div id="message"></div>
+    <table border="0">
+      <tr>
+        <form method="POST" action="create_user.php">
+        <td>User Name</td><td> <input type="text" name="user"></td>
+      </tr>
+      <tr>
+        <td>Password</td><td> <input type="password" name="password"></td>
+      </tr>
+      <tr> <td>Confirm Password </td><td><input type="password" name="cpassword"></td> </tr>
+      <tr> <td><input id="button" type="submit" name="submit" value="Sign-Up"></td> </tr>
+    </form>
+  </table>
+</fieldset>
+</div>
 
-    </div>
     <div id="inside">
 
       <p>you are a member!</p>
