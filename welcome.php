@@ -4,7 +4,7 @@ include("backend/common/logger.php");
 logger($_SESSION);
 if(!$_SESSION['logged_in']) {
 header("Location: index.php");
-} 
+}
 ?>
 
 <!DOCTYPE html>
@@ -19,6 +19,7 @@ header("Location: index.php");
     <p>Members only area</p>
   </div>
 
+<div class="search">
   <select>
     <option value="lebron">Lebron James</option>
     <option value="durant">Kevin Durant</option>
@@ -51,6 +52,7 @@ header("Location: index.php");
     <option value="kemba">Kemba Walker</option>
     <option value="hortford">Al Hortford</option>
   </select>
+</div>
   <button id="go">Go</button>
 
   <?php include('partials/footer.php'); ?>

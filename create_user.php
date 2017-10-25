@@ -13,7 +13,7 @@
 
   <div id="login_div">
 
-    <fieldset style="width:30%"><legend>Registration Form</legend>
+    <fieldset style="width:60%"><legend>Registration Form</legend>
 
     <table border="0">
       <tr>
@@ -23,7 +23,7 @@
       <tr>
         <td>Password</td><td> <input type="password" id="password"></td>
       </tr>
-      <tr> <td>Confirm Password </td><td><input type="password" name="cpassword"></td> </tr>
+      <tr> <td>Confirm Password</td><td><input type="password" name="cpassword"></td> </tr>
       <tr> <td><input id="create_user_button" type="submit" name="submit" value="Sign-Up"></td> </tr>
     </form>
   </table>

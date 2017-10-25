@@ -12,7 +12,7 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="index.php">Home</a></li>
-        <li class="active"><a href="welcome.php">Members Only</a></li>
+        <li><a href="welcome.php">Members Only</a></li>
         <li><a href="players.php">Players</a></li>
         <li><a href="biometrics.php">Biometrics</a></li>
         <li><a href="teams.php">Teams</a></li>
