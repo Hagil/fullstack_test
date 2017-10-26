@@ -4,7 +4,7 @@ include("backend/common/logger.php");
 logger($_SESSION);
 if(!$_SESSION['logged_in']) {
 header("Location: index.php");
-} 
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -17,8 +17,13 @@ header("Location: index.php");
     <h1>Top 30 NBA Players 2018</h1>
     <p>Favourites List</p>
   </div>
-
-<table id="list_players" class="table">
+<div class="personal_info" id= "<?php echo $_SESSION['user'];?>">
+<?php
+echo $_SESSION['user'] . "'s favourites";
+//echo "hagil";
+ ?>
+</div>
+<table id="list_favourites" class="table">
 <thead>
   <tr>
     <th>Player ID</th>
@@ -28,7 +33,6 @@ header("Location: index.php");
     <th>Last Name</th>
     <th>Position</th>
     <th>Jersey</th>
-    <th>Add</th>
     <th>Delete</th>
   </tr>
 </thead>

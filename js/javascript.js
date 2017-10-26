@@ -9,6 +9,7 @@ function setup() {
   $('#logout').click(do_logout);
   $('#loggingout').click(do_logout);
   $('#create_user_button').click(create_user);
+  show_favourites();
 }
 
 function blow_up(data) {

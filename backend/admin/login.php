@@ -23,6 +23,7 @@ $stmt->execute();
 if ($stmt->rowCount() == 1) {
   logger("user is registered");
   $_SESSION['logged_in'] = true;
+  $_SESSION['user'] = $user_name;
   logger($_SESSION);
   echo "logged in";
 } else {
