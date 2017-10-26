@@ -4,7 +4,7 @@ include("backend/common/logger.php");
 logger($_SESSION);
 if(!$_SESSION['logged_in']) {
 header("Location: index.php");
-} 
+}
 ?>
 
 <!DOCTYPE html>
@@ -20,6 +20,9 @@ header("Location: index.php");
     <p>Players Basic Info</p>
   </div>
 
+  <div class="personal_id" id= "<?php echo $_SESSION['user_id']; ?>">
+  </div>
+
 <table id="list_players" class="table">
 <thead>
   <tr>
@@ -31,7 +34,6 @@ header("Location: index.php");
     <th>Position</th>
     <th>Jersey</th>
     <th>Add</th>
-    <th>Delete</th>
   </tr>
 </thead>
 <tbody>

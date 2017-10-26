@@ -4,7 +4,7 @@ include("backend/common/logger.php");
 logger($_SESSION);
 if(!$_SESSION['logged_in']) {
 header("Location: index.php");
-} 
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -32,7 +32,6 @@ header("Location: index.php");
     <th>Nationality</th>
     <th>University</th>
     <th>Add</th>
-    <th>Delete</th>
   </tr>
 </thead>
 <tbody>

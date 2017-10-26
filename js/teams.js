@@ -50,15 +50,6 @@ function display_teams(data) {
 
     tr.append(td);
 
-    var td = $('<td>');
-    var button = $('<button>');
-    button.addClass('btn btn-danger delete');
-    button.text('Delete');
-    var team_id = data[counter].team_id;
-    button.attr('id', team_id);
-    td.append(button);
-    tr.append(td);
-
     $('#show_teams tbody').append(tr);
   }
 

@@ -67,27 +67,26 @@ function display_players(data) {
 
     tr.append(td);
 
-    var td = $('<td>');
-    var button = $('<button>');
-    button.addClass('btn btn-danger delete');
-    button.text('Delete');
-    var player_rank = data[counter].player_rank;
-    button.attr('id', player_rank);
-    td.append(button);
-    tr.append(td);
-
     $('#list_players tbody').append(tr);
   }
 
+  $('.edit').click(do_add);
 
-  $('.add').click(do_add);
-  $('.delete').click(do_delete);
 }
 
 function do_add() {
   console.log('Inside do_add');
   console.log($(this).attr('id'));
-  
+  var player_id = $(this).attr('id'); // TODO: user is hard coded change
+  var user_id = document.getElementsByClassName('personal_id')[0].id;
+
+  var data = {player_id:player_id, user_id:user_id};
+$.get('backend/favourites/add_favourites.php',data).done(player_added).fail(blow_up);
+}
+
+function player_added(data){
+  console.log('player_added');
+  console.log(data);
 }
 
 function do_delete() {

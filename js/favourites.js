@@ -7,7 +7,7 @@ function show_favourites() {
   var data = {
     favUser: favUser
   };
-  $.get('backend/players/show_favourites.php', data).done(display_favourites).fail(blow_up);
+  $.get('backend/favourites/show_favourites.php', data).done(display_favourites).fail(blow_up);
 }
 
 function display_favourites(data) {

@@ -24,6 +24,10 @@ if ($stmt->rowCount() == 1) {
   logger("user is registered");
   $_SESSION['logged_in'] = true;
   $_SESSION['user'] = $user_name;
+
+  $returned_val = $stmt->fetch();
+  $_SESSION['user_id'] = $returned_val['user_id'];
+
   logger($_SESSION);
   echo "logged in";
 } else {

@@ -85,15 +85,6 @@ function display_bio(data) {
 
     tr.append(td);
 
-    var td = $('<td>');
-    var button = $('<button>');
-    button.addClass('btn btn-danger delete');
-    button.text('Delete');
-    var player_id = data[counter].player_id;
-    button.attr('id', player_id);
-    td.append(button);
-    tr.append(td);
-
     $('#list_bio tbody').append(tr);
   }
 

@@ -4,7 +4,7 @@ include("backend/common/logger.php");
 logger($_SESSION);
 if(!$_SESSION['logged_in']) {
 header("Location: index.php");
-} 
+}
 ?>
 
 <!DOCTYPE html>
@@ -33,7 +33,6 @@ header("Location: index.php");
     <th>block Avg</th>
     <th>Steals Avg</th>
     <th>Add</th>
-    <th>Delete</th>
   </tr>
 </thead>
 <tbody>

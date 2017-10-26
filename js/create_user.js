@@ -1,7 +1,7 @@
-// TODO: wire up to click listener/button
+
 
 function create_user() {
-  console.log('Inside do_login');
+  console.log('Inside create_user');
 
   var user = $('#user').val();
   var password = $('#password').val();
