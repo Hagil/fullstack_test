@@ -82,7 +82,7 @@ function do_delete() {
   console.log('Inside do_add');
   console.log($(this).attr('id'));
   var player_id = $(this).attr('id');
-  var user_id = document.getElementsByClassName('personal_id')[0].id;
+  var user_id = document.getElementsByClassName('personal_info')[0].id;
 
   var data = {player_id:player_id, user_id:user_id};
 $.get('backend/favourites/delete_favourites.php',data).done(player_deleted).fail(blow_up);
