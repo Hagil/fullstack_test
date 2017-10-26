@@ -77,7 +77,7 @@ function display_players(data) {
 function do_add() {
   console.log('Inside do_add');
   console.log($(this).attr('id'));
-  var player_id = $(this).attr('id'); // TODO: user is hard coded change
+  var player_id = $(this).attr('id'); 
   var user_id = document.getElementsByClassName('personal_id')[0].id;
 
   var data = {player_id:player_id, user_id:user_id};

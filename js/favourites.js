@@ -75,21 +75,24 @@ function display_favourites(data) {
     $('#list_favourites tbody').append(tr);
   }
 
-
-  $('.add').click(do_add);
   $('.delete').click(do_delete);
 }
 
-function do_add() {
+function do_delete() {
   console.log('Inside do_add');
   console.log($(this).attr('id'));
+  var player_id = $(this).attr('id');
+  var user_id = document.getElementsByClassName('personal_id')[0].id;
 
+  var data = {player_id:player_id, user_id:user_id};
+$.get('backend/favourites/delete_favourites.php',data).done(player_deleted).fail(blow_up);
 }
 
-function do_delete() {
-  console.log('Inside do_delete');
-  console.log($(this).attr('id'));
+function player_deleted(data){
+  console.log('player_deleted');
+  console.log(data);
 }
+
 
 function blow_up(data) {
   console.log('Inside blow_up');
