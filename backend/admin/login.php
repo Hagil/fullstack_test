@@ -22,14 +22,13 @@ $stmt->execute();
 
 if ($stmt->rowCount() == 1) {
   logger("user is registered");
+  $record = $stmt->fetch();
+
   $_SESSION['logged_in'] = true;
   $_SESSION['user'] = $user_name;
+  $_SESSION['user_id'] = $record['user_id'];
 
-  $returned_val = $stmt->fetch();
-  $_SESSION['user_id'] = $returned_val['user_id'];
-
-  logger($_SESSION);
-  echo "logged in";
+  echo json_encode($_SESSION);
 } else {
   header('Location: index.php');
   echo 'sorry - you must be logged in';

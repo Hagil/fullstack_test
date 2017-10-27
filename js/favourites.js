@@ -79,10 +79,11 @@ function display_favourites(data) {
 }
 
 function do_delete() {
-  console.log('Inside do_add');
+  console.log('Inside do_delete');
   console.log($(this).attr('id'));
   var player_id = $(this).attr('id');
   var user_id = document.getElementsByClassName('personal_info')[0].id;
+console.log('user_id'+ user_id);
 
   var data = {player_id:player_id, user_id:user_id};
 $.get('backend/favourites/delete_favourites.php',data).done(player_deleted).fail(blow_up);
@@ -91,6 +92,8 @@ $.get('backend/favourites/delete_favourites.php',data).done(player_deleted).fail
 function player_deleted(data){
   console.log('player_deleted');
   console.log(data);
+  $('#list_favourites tbody').html('');
+  show_favourites();
 }
 
 

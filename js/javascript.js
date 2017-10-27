@@ -32,7 +32,10 @@ function do_login() {
 }
 
 function logged_in(data) {
-  if (data == 'logged in') {
+  data = JSON.parse(data);
+  console.log(data);
+
+  if (data.logged_in == true) {
     $('#outside').slideUp('slow');
     $('#inside').slideDown('slow');
   } else {

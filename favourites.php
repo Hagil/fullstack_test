@@ -17,7 +17,7 @@ header("Location: index.php");
     <h1>Top 30 NBA Players 2018</h1>
     <p>Favourites List</p>
   </div>
-<div class="personal_info" id= "<?php echo $_SESSION['user']; ?>">
+<div class="personal_info" id= "<?php echo $_SESSION['user_id']; ?>">
 <?php
 echo $_SESSION['user'] . "'s favourites";
 //echo "hagil";
