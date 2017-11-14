@@ -1,3 +1,1 @@
-new fullstack site for project two
-connect using localhost, open from web browser
-disconnect from localhost or close web browser
+new site for project_two
